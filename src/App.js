@@ -5,17 +5,17 @@ import './App.css';
 class App extends Component {
   state = {
     isLoading: true,
-    groups: []
+    users: []
   };
 
   async componentDidMount() {
     const response = await fetch('/cpu');
     const body = await response.json();
-    this.setState({ groups: body, isLoading: false });
+    this.setState({ users: body, isLoading: false });
   }
 
   render() {
-    const {groups, isLoading} = this.state;
+    const {users, isLoading} = this.state;
 
     if (isLoading) {
       return <p>Loading...</p>;
@@ -27,9 +27,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <div className="App-intro">
             <h2>JUG List</h2>
-            {groups.map(group =>
-              <div key={group.id}>
-                {group.name}
+            {users.map(group =>
+              <div key={userdata.name}>
+                {userdata.name}
               </div>
             )}
           </div>
