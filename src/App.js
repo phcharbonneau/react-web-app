@@ -9,7 +9,7 @@ class App extends Component {
   };
 
   async componentDidMount() {
-    const response = await fetch('/users');
+    const response = await fetch('http://j-perf-sim-ph-wildfly10.b9ad.pro-us-east-1.openshiftapps.com/users');
     const body = await response.json();
     this.setState({ users: body, isLoading: false });
   }
