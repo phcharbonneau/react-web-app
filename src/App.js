@@ -27,7 +27,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <div className="App-intro">
             <h2>JUG List</h2>
-            {users.map(group =>
+            {users.map(userdata =>
               <div key={userdata.name}>
                 {userdata.name}
               </div>
