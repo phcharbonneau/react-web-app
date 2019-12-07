@@ -13,7 +13,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://j-perf-sim-ph-wildfly10.b9ad.pro-us-east-1.openshiftapps.com",
   "eslintConfig": {
     "extends": "react-app"
   },
