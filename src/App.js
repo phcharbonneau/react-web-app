@@ -9,7 +9,7 @@ class App extends Component {
   };
 
   async componentDidMount() {
-    const response = await fetch('/cpu');
+    const response = await fetch('/users');
     const body = await response.json();
     this.setState({ users: body, isLoading: false });
   }
