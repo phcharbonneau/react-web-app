@@ -26,10 +26,10 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <div className="App-intro">
-            <h2>JUG List</h2>
-            {users.map(userdata =>
-              <div key={userdata.name}>
-                {userdata.name}
+            <h2>User List</h2>
+            {users.map(user =>
+              <div key={user.id}>
+                {user.name}
               </div>
             )}
           </div>
