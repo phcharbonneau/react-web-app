@@ -44,7 +44,7 @@ class App extends Component {
 		    {softwares.map(software =>
 			<tr key={software.version}>
                           <td>{software.version}</td>
-                          <td>{software.lifecycle}</td>
+                          <td>{software.lifeCycle}</td>
 	    		  <td>{software.lastFreePublicUpdateDate}</td>
 	    		  <td>{software.technology}</td>
                           <td>{software.category}</td>
