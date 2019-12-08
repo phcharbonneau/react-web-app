@@ -27,9 +27,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <div className="App-intro">
             <h2>Software Asset List</h2>
-            {softwares.map(softwareasset =>
-              <div key={softwareasset.software}>
-                {softwareasset.vendor}
+            {softwares.map(software =>
+              <div key={software.software}>
+                {software.vendor}
               </div>
             )}
           </div>
