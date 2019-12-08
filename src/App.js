@@ -28,7 +28,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <div className="App-intro">
             <h2>Software Asset List</h2>
-              	<table>
+              	<table className="table">
                 <thead>
                   <tr>
                     <th>Version</th>
