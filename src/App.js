@@ -28,8 +28,10 @@ class App extends Component {
           <div className="App-intro">
             <h2>Software Asset List</h2>
             {softwares.map(software =>
-              <div key={software.software}>
+              <div key={software.version}>
+                {software.version}
                 {software.technology}
+                {software.category}
                 {software.vendor}
               </div>
             )}
