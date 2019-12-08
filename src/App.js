@@ -9,7 +9,7 @@ class App extends Component {
   };
 
   async componentDidMount() {
-    const response = await fetch('http://j-perf-sim-ph-wildfly10.b9ad.pro-us-east-1.openshiftapps.com/users');
+    const response = await fetch('http://j-perf-sim-ph-wildfly10.b9ad.pro-us-east-1.openshiftapps.com/softwares');
     const body = await response.json();
     this.setState({ softwares: body, isLoading: false });
   }
@@ -28,7 +28,7 @@ class App extends Component {
           <div className="App-intro">
             <h2>Software Asset List</h2>
             {softwares.map(softwareasset =>
-              <div key={softwareasset.id}>
+              <div key={softwareasset.software}>
                 {softwareasset.vendor}
               </div>
             )}
