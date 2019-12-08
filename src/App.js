@@ -29,6 +29,7 @@ class App extends Component {
             <h2>Software Asset List</h2>
             {softwares.map(software =>
               <div key={software.software}>
+                {software.technology}
                 {software.vendor}
               </div>
             )}
