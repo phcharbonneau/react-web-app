@@ -27,14 +27,32 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <div className="App-intro">
             <h2>Software Asset List</h2>
-            {softwares.map(software =>
-              <div key={software.version}>
-                {software.version}
-                {software.technology}
-                {software.category}
-                {software.vendor}
-              </div>
-            )}
+           const Table = ({ softwares }) => {
+            return (
+              <table>
+                <thead>
+                  <tr>
+                    <th>Version</th>
+                    <th>Technology</th>
+                    <th>Category</th>
+                    <th>Vendor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  { (softwares.length > 0) ? softwares.map( (software, version) => {
+                     return (
+                      <tr key={ version }>
+                        <td>{ software.version }</td>
+                        <td>{ software.technology }</td>
+                        <td>{ software.category}</td>
+                        <td>{ software.vendor }</td>
+                      </tr>
+                    )
+             }) : <tr><td colSpan="5">Loading...</td></tr> }
+          </tbody>
+        </table>
+        );
+}
           </div>
         </header>
       </div>
