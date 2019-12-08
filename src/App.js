@@ -25,7 +25,7 @@ class App extends Component {
     return (
       <div className="App">
 	    <nav class="navbar navbar-light bg-light">
-		<h2>Software Asset List</h2>
+		<h2>Software List</h2>
 	   </nav>
            
            <table className="table">
