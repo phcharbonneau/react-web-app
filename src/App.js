@@ -39,14 +39,16 @@ class App extends Component {
                 </thead>
                 <tbody>
 			
-			               {softwares.map(software =>
-			                <tr key={software.version}>
-                        <td>{software.version}</td>
-                        <td>{software.technology}</td>
-                        <td>{software.category}</td>
-                        <td>{software.vendor}</td>
-			              </tr>
-			            )}
+		    {softwares.map(software =>
+			<tr key={software.version}>
+                          <td>{software.version}</td>
+                          <td>{software.lifecycle}</td>
+	    		  <td>{software.lastFreePublicUpdateDate}</td>
+	    		  <td>{software.technology}</td>
+                          <td>{software.category}</td>
+                          <td>{software.vendor}</td>
+		      </tr>
+		    )}
 			            
              </tbody>
           </table>  
