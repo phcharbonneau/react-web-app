@@ -41,8 +41,9 @@ class App extends Component {
                 </thead>
                 <tbody>
 			
-		    {softwares.map(software =>
-			const isEOL = software.isEOL;
+		    {const isEOL = software.isEOL;
+	    		softwares.map(software =>
+			
 	    		<tr key={software.version}>
                           <td><a href={software.refURL}>{software.version}</a></td>
                           <td>{isEOL ? 'EOL!' : 'SUPP!'}</td>
