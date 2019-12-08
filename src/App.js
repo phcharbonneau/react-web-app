@@ -24,11 +24,11 @@ class App extends Component {
 
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <div className="App-intro">
-            <h2>Software Asset List</h2>
-              	<table className="table">
+	    <nav class="navbar navbar-light bg-light">
+		<h2>Software Asset List</h2>
+	   </nav>
+           
+           <table className="table">
                 <thead>
                   <tr>
                     <th>Version</th>
@@ -50,8 +50,7 @@ class App extends Component {
 			            
              </tbody>
           </table>  
-          </div>
-        </header>
+         
       </div>
     );
   }
