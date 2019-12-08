@@ -27,9 +27,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <div className="App-intro">
             <h2>Software Asset List</h2>
-           const Table = ({ softwares }) => {
-            return (
-              <table>
+              	<table>
                 <thead>
                   <tr>
                     <th>Version</th>
@@ -39,20 +37,18 @@ class App extends Component {
                   </tr>
                 </thead>
                 <tbody>
-                  { (softwares.length > 0) ? softwares.map( (software, version) => {
-                     return (
-                      <tr key={ version }>
-                        <td>{ software.version }</td>
-                        <td>{ software.technology }</td>
-                        <td>{ software.category}</td>
-                        <td>{ software.vendor }</td>
-                      </tr>
-                    )
-             }) : <tr><td colSpan="5">Loading...</td></tr> }
-          </tbody>
-        </table>
-        );
-}
+			
+			               {softwares.map(software =>
+			                <tr key={software.version}>
+                        <td>{software.version}</td>
+                        <td>{software.technology}</td>
+                        <td>{software.category}</td>
+                        <td>{software.vendor}</td>
+			              </tr>
+			            )}
+			            
+             </tbody>
+          </table>  
           </div>
         </header>
       </div>
