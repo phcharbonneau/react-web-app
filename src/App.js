@@ -10,7 +10,7 @@ class App extends Component {
   };
 
   async componentDidMount() {
-    const response = await fetch('/softwares');
+    const response = await fetch('http://j-perf-sim-ph-wildfly10.b9ad.pro-us-east-1.openshiftapps.com/softwares');
     const body = await response.json();
     this.setState({ softwares: body, isLoading: false });
   }
@@ -43,7 +43,7 @@ class App extends Component {
 			
 		    {softwares.map(software =>
 			<tr key={software.version}>
-                          <td><a href="/softwares">{software.version}</a></td>
+                          <td><a href='http://j-perf-sim-ph-wildfly10.b9ad.pro-us-east-1.openshiftapps.com/softwares'>{software.version}</a></td>
                           <td>{software.lifeCycle}</td>
 	    		  <td>{software.lastFreePublicUpdateDate}</td>
 	    		  <td>{software.technology}</td>
