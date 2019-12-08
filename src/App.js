@@ -5,17 +5,17 @@ import './App.css';
 class App extends Component {
   state = {
     isLoading: true,
-    users: []
+    softwares: []
   };
 
   async componentDidMount() {
     const response = await fetch('http://j-perf-sim-ph-wildfly10.b9ad.pro-us-east-1.openshiftapps.com/users');
     const body = await response.json();
-    this.setState({ users: body, isLoading: false });
+    this.setState({ softwares: body, isLoading: false });
   }
 
   render() {
-    const {users, isLoading} = this.state;
+    const {softwares, isLoading} = this.state;
 
     if (isLoading) {
       return <p>Loading...</p>;
@@ -26,10 +26,10 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <div className="App-intro">
-            <h2>User List</h2>
-            {users.map(user =>
-              <div key={user.id}>
-                {user.name}
+            <h2>Software Asset List</h2>
+            {softwares.map(softwareasset =>
+              <div key={softwareasset.software}>
+                {softwareasset.vendor}
               </div>
             )}
           </div>
