@@ -32,6 +32,8 @@ class App extends Component {
                 <thead>
                   <tr>
                     <th>Version</th>
+	    	    <th>Life-Cycle</th>
+	            <th>Last Free Update Date</th>
                     <th>Technology</th>
                     <th>Category</th>
                     <th>Vendor</th>
