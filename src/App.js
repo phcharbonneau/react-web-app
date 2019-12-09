@@ -37,7 +37,7 @@ class App extends Component {
 	            <th>Last Update Date (p)</th>
 	            <th>Last Update Date (c)</th>
                     <th>Tech</th>
-	    	    <th>Dependencies</th>
+	    	    <th>Dependency Stack</th>
                     <th>Category</th>
                     <th>Vendor</th>
                   </tr>
