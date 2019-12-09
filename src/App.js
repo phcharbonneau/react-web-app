@@ -53,8 +53,7 @@ class App extends Component {
 	    		  <td>{software.technology}</td>
 	                       <td>
 	                       {software.techDependencyList.map(technology =>
-	                           technology 
-	    			   <br />
+	                           <li>technology</i> 	    			   
 	                       )}
                                </td>
                           <td>{software.category}</td>
