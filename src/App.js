@@ -33,6 +33,7 @@ class App extends Component {
                   <tr>
                     <th>Version</th>
 	    	    <th>Life-Cycle</th>
+	    	    <th>Release Date</th>
 	            <th>Last Free Update Date</th>
                     <th>Technology</th>
                     <th>Category</th>
@@ -46,6 +47,7 @@ class App extends Component {
 	    		<tr key={software.version}>
                           <td><a href={software.refURL}>{software.version}</a></td>
                           <td>{software.eol ? 'EOL!' : 'SUPPORTED'}</td>
+	    		  <td>{software.releaseDate}</td>
 	    		  <td>{software.lastFreePublicUpdateDate}</td>
 	    		  <td>{software.technology}</td>
                           <td>{software.category}</td>
