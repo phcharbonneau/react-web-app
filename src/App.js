@@ -34,10 +34,10 @@ class App extends Component {
                     <th>Version</th>
 	    	    <th>Life-Cycle</th>
 	    	    <th>Release Date</th>
-	            <th>Last Free Update Date (personnal)</th>
-	            <th>Last Free Update Date (commercial)</th>
-                    <th>Technology</th>
-	    	    <th>Tech Dependencies</th>
+	            <th>Last Update Date (personnal)</th>
+	            <th>Last Update Date (commercial)</th>
+                    <th>Tech</th>
+	    	    <th>Dependencies</th>
                     <th>Category</th>
                     <th>Vendor</th>
                   </tr>
