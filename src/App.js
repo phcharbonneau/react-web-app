@@ -36,6 +36,7 @@ class App extends Component {
 	    	    <th>Release Date</th>
 	            <th>Last Free Update Date</th>
                     <th>Technology</th>
+	    	    <th>Tech Dependencies</th>
                     <th>Category</th>
                     <th>Vendor</th>
                   </tr>
@@ -50,6 +51,9 @@ class App extends Component {
 	    		  <td>{software.releaseDate}</td>
 	    		  <td>{software.lastFreePublicUpdateDate}</td>
 	    		  <td>{software.technology}</td>
+	                       {software.techDependencyList.map(technology =>
+	                           <td>{technology}</td>
+	                        )}
                           <td>{software.category}</td>
                           <td>{software.vendor}</td>
 		      </tr>
