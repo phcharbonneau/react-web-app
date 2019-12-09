@@ -34,7 +34,8 @@ class App extends Component {
                     <th>Version</th>
 	    	    <th>Life-Cycle</th>
 	    	    <th>Release Date</th>
-	            <th>Last Free Update Date</th>
+	            <th>Last Free Update Date (personnal)</th>
+	            <th>Last Free Update Date (commercial)</th>
                     <th>Technology</th>
 	    	    <th>Tech Dependencies</th>
                     <th>Category</th>
@@ -49,7 +50,8 @@ class App extends Component {
                           <td><a href={software.refURL}>{software.version}</a></td>
                           <td>{software.eol ? 'EOL!' : 'SUPPORTED'}</td>
 	    		  <td>{software.releaseDate}</td>
-	    		  <td>{software.lastFreePublicUpdateDate}</td>
+	    		  <td>{software.lastFreePersonnalPublicUpdateDate}</td>
+	  		  <td>{software.lastFreeCommercialPublicUpdateDate}</td>
 	    		  <td>{software.technology}</td>
 	                       <td>
 	                       {software.techDependencyList.map(technology =>
