@@ -45,7 +45,7 @@ class App extends Component {
 			
 	    		<tr key={software.version}>
                           <td><a href={software.refURL}>{software.version}</a></td>
-                          <td>{software.eol ? 'EOL!' : 'SUPP!'}</td>
+                          <td>{software.eol ? '<p style="color:#800000">EOL</p>' : '<p style="color:#2E86C1">SUPPORTED</p>'}</td>
 	    		  <td>{software.lastFreePublicUpdateDate}</td>
 	    		  <td>{software.technology}</td>
                           <td>{software.category}</td>
