@@ -31,12 +31,11 @@ class App extends Component {
            <table className="table">
                 <thead>
                   <tr>
-                    <th>Version</th>
+                    <th>Tech & Version</th>
 	    	    <th>Life-Cycle</th>
 	    	    <th>Release Date</th>
 	            <th>Last Update Date (p)</th>
 	            <th>Last Update Date (c)</th>
-                    <th>Tech</th>
 	    	    <th>Dependency Stack</th>
                     <th>Category</th>
                     <th>Vendor</th>
@@ -52,12 +51,11 @@ class App extends Component {
 	    		  <td>{software.releaseDate}</td>
 	    		  <td>{software.lastFreePersonnalPublicUpdateDate}</td>
 	  		  <td>{software.lastFreeCommercialPublicUpdateDate}</td>
-	    		  <td>{software.technology}</td>
-	                       <td>
+	                  <td>
 	                       {software.techDependencyList.map(technology =>
 	                           <li>{technology}</li> 	    			   
 	                       )}
-                               </td>
+                          </td>
                           <td>{software.category}</td>
                           <td>{software.vendor}</td>
 		      </tr>
