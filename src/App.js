@@ -49,7 +49,7 @@ class App extends Component {
 	    		<tr key={software.version}>
                           <td><a href={software.refURL}>{software.version}</a></td>
 			  <td>{software.license}</td>
-                          <td>{software.eol ? 'EOL!' : 'SUPPORTED'}</td>
+                          <td>{software.eol ? 'EOL' : 'SUPPORTED'}</td>
 	    		  <td>{software.releaseDate}</td>
 	    		  <td>{software.lastFreePersonnalPublicUpdateDate}</td>
 	  		  <td>{software.lastFreeCommercialPublicUpdateDate}</td>
