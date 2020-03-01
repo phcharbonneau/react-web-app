@@ -13,6 +13,9 @@ class App extends Component {
     const response = await fetch('http://j-perf-sim-ph-wildfly10.b9ad.pro-us-east-1.openshiftapps.com/softwares');
     const body = await response.json();
     this.setState({ softwares: body, isLoading: false });
+    
+    // Now we need to make it run at a specified interval
+    setInterval(this.getData, 5000); // runs every 5 seconds.
   }
 
   render() {
